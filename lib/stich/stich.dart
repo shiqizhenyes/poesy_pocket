@@ -27,7 +27,7 @@ class _StichState extends State<Stich> with TickerProviderStateMixin {
   Widget _poesyContent() {
     return Positioned(
       child: Container(
-        margin: EdgeInsets.only(left: 16.$dp, right: 16.$dp),
+        margin: EdgeInsets.only(left: 40.$dp, right: 40.$dp),
         padding: EdgeInsets.all(16.$dp),
         height: 300,
         width: double.maxFinite,
@@ -79,7 +79,7 @@ class _StichState extends State<Stich> with TickerProviderStateMixin {
         child: Container(
           margin: EdgeInsets.only(left: 5.$dp, right: 5.$dp),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(10.$dp),
+            borderRadius: BorderRadius.circular(5.$dp),
             child: Image(image: AssetImage("assets/images/picture1.jpeg"), fit: BoxFit.fitWidth,),
           ),
         ),
