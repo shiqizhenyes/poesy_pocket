@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:poesy_pocket/localization/p_localizations.dart';
 import 'package:poesy_pocket/localization/p_locations_delegate.dart';
+import 'package:poesy_pocket/meet/meet.dart';
 import 'package:poesy_pocket/stich/stich.dart';
 import 'package:poesy_pocket/util/w_colors.dart';
 import 'package:poesy_pocket/widget/NText.dart';
@@ -99,7 +100,12 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     _tabarViews = List<Widget>();
     _tabsContent.forEach((content) {
       _tabs.add(Tab(text: content,));
-      _tabarViews.add(Stich());
+      if (content == PLocations.of(context).meet) {
+        _tabarViews.add(Meet());
+      } else {
+        _tabarViews.add(Stich());
+      }
+
     });
     return Scaffold(
       appBar: AppBar(

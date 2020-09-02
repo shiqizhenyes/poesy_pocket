@@ -20,6 +20,10 @@ class PLocations {
       'meet': '邂逅',
       'poetry': '诗词',
       'ritual_music': '礼乐',
+      'read_aloud_poesy_for_you': '为你读诗',
+      'concentration': '精选',
+      'has_play': '播放次数',
+      'colon': ':',
     },
     'zh': {
       'title':'诗藏',
@@ -28,6 +32,11 @@ class PLocations {
       'meet': '邂逅',
       'poetry': '诗词',
       'ritual_music': '礼乐',
+      'read_aloud_poesy_for_you': '为你读诗',
+      'concentration': '精选',
+      'has_play': '已播放',
+      'colon': '：',
+
     }
   };
 
@@ -58,6 +67,29 @@ class PLocations {
 
   String get ritualMusic {
     return _localizedValue[locale.languageCode]["ritual_music"];
+  }
+
+
+  ///     'read_aloud_poesy_for_you': '为你读诗',
+  //       'concentration': '精选',
+
+  String get readAloudPoesyForYou {
+    return _localizedValue[locale.languageCode]["read_aloud_poesy_for_you"];
+  }
+
+  String get concentration {
+    return _localizedValue[locale.languageCode]["concentration"];
+  }
+
+  ///  'play_count': '播放次数',
+//       'colon': '：',
+
+  String get hasPlay {
+    return _localizedValue[locale.languageCode]["has_play"];
+  }
+
+  String get colon {
+    return _localizedValue[locale.languageCode]["colon"];
   }
 
 }
